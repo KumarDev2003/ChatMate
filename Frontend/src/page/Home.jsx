@@ -61,12 +61,10 @@ const Home = () => {
     // User details
     const [user, _] = useState(() => {
         const userDetails = localStorage.getItem('user:detail');
-        console.log('LocalStorage user:detail:', userDetails); // Log the raw data from localStorage
         return JSON.parse(userDetails);
     });
 
     useEffect(() => {
-        console.log('Parsed user data:', user); // Log the parsed user data
     }, [user]);
 
     // Fetch conversations
@@ -86,7 +84,6 @@ const Home = () => {
     
                 // Make the API call to fetch conversations
                 const response = await axios.get(`/api/conversation/${userId}`);
-                console.log('Fetched Conversations:', response.data);
     
                 // Update the state with the fetched conversations
                 setConversation(response.data);
@@ -106,7 +103,6 @@ const Home = () => {
         try {
           const response = await axios.get(`/api/message/${conversationId}`);
           setMessages(response.data); // Update the state with the fetched messages
-          console.log('Fetched Messages:', response.data);
         } catch (error) {
           console.error('Error fetching messages:', error.response?.data || error.message);
         }
@@ -163,7 +159,6 @@ const Home = () => {
     
         // Optionally, send the message to the backend for persistence
         await axios.post("/api/message", payload);
-        console.log("Message sent successfully");
     
         setNewMessage(""); // Clear the input field
       } catch (error) {
@@ -179,7 +174,6 @@ const Home = () => {
     try {
       const response = await axios.get('/api/users'); // Fetch all users
       setUsers(response.data); // Update the state with the fetched users
-      console.log('Fetched Users:', response.data);
     } catch (error) {
       console.error('Error fetching users:', error.response?.data || error.message);
     }
@@ -230,7 +224,6 @@ const Home = () => {
     useEffect(() => {
       if (socket) {
         socket.on("getUsers", (users) => {
-          console.log("Active users:", users); // Log the active users
           setActiveUsers(users); // Update the state with the active users
         });
       }
