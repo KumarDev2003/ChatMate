@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Profile from '../assets/Profile.svg' // Default import
-import Send from '../assets/send.svg' // Default import
+import Send from '../assets/Send.svg'; // Correct capitalization
 import axios from 'axios'; // Import axios for making API requests
 
 // socket.io client setup
