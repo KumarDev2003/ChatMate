@@ -1,0 +1,53 @@
+[33mcommit 895017c3574ad1f0acc1a4b1c2062a51dffd3942[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: KumarDev2003 <devkumar2300.dk@gmail.com>
+Date:   Mon Apr 28 13:07:29 2025 +0530
+
+    Update WebSocket configuration and backend routes
+
+[33mcommit 63cbb91ba4d55a854a0ee89baf02dea606732049[m
+Author: KumarDev2003 <devkumar2300.dk@gmail.com>
+Date:   Mon Apr 28 12:48:50 2025 +0530
+
+    Replace bcrypt with bcryptjs in backend code
+
+[33mcommit eb62b3eb5ca887ea133d5881846b2f887265e026[m
+Author: KumarDev2003 <devkumar2300.dk@gmail.com>
+Date:   Mon Apr 28 12:38:15 2025 +0530
+
+    Reinstall dependencies and confirm bcrypt is removed
+
+[33mcommit dd1e47e069782a5a916b52ac3db3fb8ba5363893[m
+Author: KumarDev2003 <devkumar2300.dk@gmail.com>
+Date:   Mon Apr 28 12:32:23 2025 +0530
+
+    Specify Node.js version in package.json
+
+[33mcommit 963d7f71b2e568604dbe8612bc4b53560ce5d595[m
+Author: KumarDev2003 <devkumar2300.dk@gmail.com>
+Date:   Mon Apr 28 12:29:46 2025 +0530
+
+    Remove bcrypt and use bcryptjs
+
+[33mcommit ec80451447ef05be148b92a254db041f429de4be[m
+Author: KumarDev2003 <devkumar2300.dk@gmail.com>
+Date:   Mon Apr 28 12:24:27 2025 +0530
+
+    Replaced bcrypt with bcryptjs for deployment compatibility
+
+[33mcommit c0fc7e6d023db489865889002b75c68ae51195ad[m
+Author: KumarDev2003 <devkumar2300.dk@gmail.com>
+Date:   Mon Apr 28 12:17:05 2025 +0530
+
+    Update start script for production
+
+[33mcommit aa2ff80209901399b33c14aa271f8cc6666f6cc9[m
+Author: KumarDev2003 <devkumar2300.dk@gmail.com>
+Date:   Mon Apr 28 12:10:28 2025 +0530
+
+    Fix file path issues for assets and update Home.jsx
+
+[33mcommit 0ab1de5b3e47579fe7ab8f96679ef7762eaa4586[m
+Author: KumarDev2003 <devkumar2300.dk@gmail.com>
+Date:   Mon Apr 28 11:49:23 2025 +0530
+
+    v.1.0

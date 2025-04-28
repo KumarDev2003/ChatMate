@@ -33,8 +33,13 @@ const SOCKET_PORT = process.env.SOCKET_PORT || 3001;
 
 let users = [];
 const io = new Server(SOCKET_PORT, {
-  cors: { origin: "http://localhost:5173", methods: ["GET","POST"], credentials: true }
+  cors: {
+    origin: [process.env.FRONTEND_URL],
+    methods: ["GET","POST"],
+    credentials: true
+  }
 });
+
 
 io.on("connection", (socket) => {
 

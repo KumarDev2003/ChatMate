@@ -11,13 +11,15 @@ const Home = () => {
 
   // Socket.io setup
 
+    const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || window.location.origin;
+
     const [socket, setSocket] = useState(null);
 
     useEffect(() => {
       // Connect to the socket server
-      const newSocket = io("http://localhost:3001", {
-        transports: ["websocket"], // Use WebSocket transport
-        withCredentials: true, // Allow cross-origin requests
+      const newSocket = io(SOCKET_URL, {
+        transports: ["websocket"],
+        withCredentials: true,
       });
   
       setSocket(newSocket); // Save the socket instance in state
